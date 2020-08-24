@@ -4,42 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primera actividad TechLabs</title>
-    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="Css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <h1>Actividad de Html y Css</h1>
-    </header>
-    <main>
-        <div class="intro">
-            <h2>HTML Y CSS</h2>
-            <p>Son los componentes básicos a la hora de construir un sitio web</p>
-        </div>
-        <div class="my-skills">
-            <h2>Conocimientos</h2>
-            <div class="columns">
-                <!--Columna 1-->
-                <div class="column">
-                    <h3>HTML</h3>
-                    <p>Lenguaje de marcado con el que inicie en el mundo de la programación en 2015</p>
-                </div>
-                <!--Columna 2-->
-                <div class="column">
-                    <h3>CSS</h3>
-                    <p>CSS (en inglés Cascading Style Sheets) segundo componente con el que inicie en 2015</p>
-                </div>
-                <!--Columna 3-->
-                <div class="column">
-                    <h3>Y más</h3>
-                    <p>Angular, React, bootstrap, Java, C#, Hibernate, Spring, .Net, MYSQL, Oracle, SQL Server.</p>
-                </div>
+    <header class="header">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="description">
+                <h1>Hola!, Bienvenido a mis sitio oficial.
+                    <p>En este sitio comparto mis conocimientos de las tecnologías para el desarrollo de software.</p>
+                    <button class="btn btn-outline-secundary btn-lg">Ver más</button></h1>
             </div>
-            <!--Columna -->
         </div>
-        <!--My-skill-->
-    </main>
+    </header>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top ">
+        <a class="navbar-brand" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
+    <span class="navbar-toggler-icon"></span>
+   </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mr-4">
+                <li class="nav-item">
+                    <a class="nav-link" data-value="about" href="#">Sobre mi</a> </li>
+                <li class="nav-item">
+                    <a class="nav-link " data-value="portfolio" href="#">Conocimientos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " data-value="blog" href="#">Blog</a> </li>
+                <li class="nav-item">
+                    <a class="nav-link " data-value="team" href="#">Equipo</a> </li>
+                <li class="nav-item">
+                    <a class="nav-link " data-value="contact" href="#">Contacto</a> </li>
+            </ul>
+        </div>
+    </nav>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
