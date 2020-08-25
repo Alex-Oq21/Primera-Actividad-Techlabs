@@ -49,6 +49,9 @@
     background: rgba(244, 244, 244, 0.79);
 }
 
+
+/*Descripción*/
+
 .description {
     position: absolute;
     top: 30%;
@@ -73,6 +76,9 @@
     color: #fff;
 }
 
+
+/*Sobre mí*/
+
 .row {
     margin: 4em 0;
     padding: 1em;
@@ -82,6 +88,7 @@
 .titulo {
     color: #F97300;
     margin: 2em;
+    text-align: center;
 }
 
 .row img {
@@ -109,4 +116,23 @@
 .row .desc p {
     line-height: 2;
     color: #888;
+}
+
+
+/*Conocimientos*/
+
+.conocimientos {
+    margin: 4em 0;
+    position: relative;
+}
+
+.conocimientos h1 {
+    color: #F97300;
+    margin: 2em;
+}
+
+.conocimientos img {
+    height: 15rem;
+    width: 100%;
+    margin: 1em;
 }
