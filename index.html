@@ -15,7 +15,7 @@
 
 <body>
     <header class="header">
-        <div class="overlay"></div>
+        <div class="overlay" id="home"></div>
         <div class="container">
             <div class="description">
                 <h1>Hola!, Bienvenido a mis sitio oficial.
@@ -25,29 +25,31 @@
         </div>
     </header>
     <!-- navbar -->
+
     <nav class="navbar navbar-expand-lg fixed-top ">
-        <a class="navbar-brand" href="#">Home</a>
+        <a class="navbar-brand" href="#" data-value="home">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
     <span class="navbar-toggler-icon"></span>
    </button>
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav mr-4">
                 <li class="nav-item">
-                    <a class="nav-link" data-value="about" href="#">Sobre mi</a> </li>
+                    <a class="nav-link" data-value="sobremi" href="#">Sobre mi</a> </li>
                 <li class="nav-item">
-                    <a class="nav-link " data-value="portfolio" href="#">Conocimientos</a>
+                    <a class="nav-link " data-value="conocimientos" href="#">Conocimientos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " data-value="blog" href="#">Blog</a> </li>
                 <li class="nav-item">
-                    <a class="nav-link " data-value="team" href="#">Equipo</a> </li>
+                    <a class="nav-link " data-value="equipo" href="#">Equipo</a> </li>
                 <li class="nav-item">
-                    <a class="nav-link " data-value="contact" href="#">Contacto</a> </li>
+                    <a class="nav-link " data-value="contactame" href="#">Contacto</a> </li>
             </ul>
         </div>
     </nav>
+
     <!-- Sobre mí -->
-    <div class="sobremi">
+    <div class="sobremi" id="sobremi">
         <h1 class="titulo">Sobre mí</h1>
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12">
@@ -65,7 +67,7 @@
         </div>
     </div>
     <!-- Sección de Conocimientos -->
-    <div class="conocimientos">
+    <div class="conocimientos" id="conocimientos">
         <h1 class="text-center">Conocimientos</h1>
         <div class="container">
             <div class="row">
@@ -104,7 +106,7 @@
     </div>
 
     <!--Equipo-->
-    <div class="equipo">
+    <div class="equipo" id="equipo">
         <div class="container">
             <h1 class="text-center">Equipo</h1>
             <div class="row">
@@ -140,8 +142,11 @@
         </div>
     </div>
 
+
+
+
     <!-- Formulario de contacto -->
-    <div class="contact-form">
+    <div class="contact-form" id="contactame">
         <div class="container">
             <form>
                 <div class="row">
@@ -166,7 +171,11 @@
             </form>
         </div>
     </div>
+
+
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
 </body>
 
 </html>
