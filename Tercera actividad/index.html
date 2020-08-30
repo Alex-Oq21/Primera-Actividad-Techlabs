@@ -12,11 +12,23 @@
     <button id="getText">Obtener texto</button>
     <button id="getUsers">Obtener usuarios</button>
     <button id="getPosts">Obtener información de API</button>
+    <hr>
     <div id="output"></div>
+    <br>
+    <form action="" id="addPost">
+        <div>
+            <input type="text" id="title" placeholder="Titulo">
+        </div>
+        <div>
+            <textarea name="" id="body" cols="30" rows="10" placeholder="Escribe algo."></textarea>
+        </div>
+        <input type="submit" value="Enviar">
+    </form>
     <script>
         document.getElementById('getText').addEventListener('click', getTtext);
         document.getElementById('getUsers').addEventListener('click', getUsers);
         document.getElementById('getPosts').addEventListener('click', getPosts);
+        document.getElementById('addPost').addEventListener('submit', addPost);
 
         function getTtext() {
             fetch('ejemplo.txt')
@@ -62,6 +74,25 @@
 
                     document.getElementById('output').innerHTML = output;
                 })
+        }
+
+        function addPost(e) {
+            e.preventDefault();
+            let title = document.getElementById('title').value;
+            let body = document.getElementById('body').value;
+            fetch('https://jsonplaceholder.typicode.com/posts', {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json, text/plain, */*',
+                        'Content-type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        title: title,
+                        body: body
+                    })
+                })
+                .then((res) => res.json())
+                .then((data) => console.log(data))
         }
     </script>
 
